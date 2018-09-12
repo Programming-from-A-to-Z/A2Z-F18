@@ -4,7 +4,7 @@ This course focuses on programming strategies and techniques behind procedural a
 
 ## Info
 - Daniel Shiffman, Tuesdays, 12:10pm-2:40pm
-- [All class dates](http://help.itp.nyu.edu/curriculum/fall-class-dates)
+- [All class dates](http://help.itp.nyu.edu/curriculum/registration/fall-2018-reg-info/fall-2018-class-dates-term-deadlines)
 - [Office Hours](https://itp.nyu.edu/inwiki/Signup/Shiffman)
 
 ## Mailing List
