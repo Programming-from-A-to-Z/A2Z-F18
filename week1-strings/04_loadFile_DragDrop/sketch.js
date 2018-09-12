@@ -14,8 +14,6 @@ function setup() {
   dropZone = createDiv('Drop files here');
   dropZone.id('drop_zone');
 
-  // When the user drags a file over the div
-  dropZone.dragOver(highlight);
 
   // Not using this event in this example
   // dropZone.dragLeave(someHandler);
@@ -24,6 +22,9 @@ function setup() {
   // One to handle the dropping event
   // One to handle the files when they are ready
   dropZone.drop(gotFile, unHighlight);
+
+  // When the user drags a file over the div
+  dropZone.dragOver(highlight);
 
 }
 
