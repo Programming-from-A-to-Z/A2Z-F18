@@ -25,6 +25,9 @@ This course focuses on programming strategies and techniques behind procedural a
 * [Homework Assignment](https://github.com/shiffman/A2Z-F18/wiki/Week-1-Homework)
 
 ## Week 2 -- Regular Expressions
+* In class code
+  * [Many DOM Elements](https://editor.p5js.org/icm/sketches/SkNT4TUuQ)
+  * [Arrow Function code](https://editor.p5js.org/icm/sketches/SkLqM6Uu7)
 * [Notes and Examples](http://shiffman.net/a2z/regex/)
 * Also
   * multiple DOMs + multiple event
