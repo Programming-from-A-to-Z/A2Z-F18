@@ -27,7 +27,8 @@ This course focuses on programming strategies and techniques behind procedural a
 ## Week 2 -- Regular Expressions
 * [Notes and Examples](http://shiffman.net/a2z/regex/)
 * Also
-  * multiple DOMs + multiple event
+  * [Many DOM Elements](https://editor.p5js.org/icm/sketches/SkNT4TUuQ)
+  * [Arrow Function code](https://editor.p5js.org/icm/sketches/SkLqM6Uu7)
   * rita.js -- similar and rhyming, etc.
 * Regular Expressions
   * meta-characters
