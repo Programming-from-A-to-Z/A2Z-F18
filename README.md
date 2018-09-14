@@ -149,7 +149,7 @@ This course focuses on programming strategies and techniques behind procedural a
 ## Tools
 * [p5.js](http://p5js.org)
 * [p5.js on GitHub](https://github.com/processing/p5.js)
-* [p5.js CDN](http://cdnjs.com/libraries/p5.js)
+* [p5.js CDN](http://cdnjs.com/https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/p5.min.js)
 * [Node](http://nodejs.org/)
 * [RitaJS](https://github.com/dhowe/RiTaJS)
 
