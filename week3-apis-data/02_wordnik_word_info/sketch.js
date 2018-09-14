@@ -89,6 +89,8 @@ function gotAudio(data) {
 
 // Closure to attach a sond to a link press
 function setSound(a, url) {
+  a.mousePressed(playSound);
+
   function playSound() {
     // Using CORS Anywhere to get around issue with CORS and audio files
     let audio = createAudio('https://cors-anywhere.herokuapp.com/' + url);
