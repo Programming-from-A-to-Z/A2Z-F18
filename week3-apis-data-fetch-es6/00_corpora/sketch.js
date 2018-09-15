@@ -11,7 +11,7 @@ function setup() {
   fetch('sea_emoji.json')
     .then(response => response.json())
     .then(data => emojis = data.seaEmoji)
-    .catch(err => console.error);
+    .catch(error => console.error(error));
 
   let button = select('#button');
   button.mousePressed(() => {

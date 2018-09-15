@@ -53,7 +53,7 @@ function search() {
         setCallback(a, article);
       }
     })
-    .catch(err => console.error);
+    .catch(error => console.error(error));
 
 }
 
@@ -82,6 +82,6 @@ function setCallback(a, article) {
         // Show in on the HTML page
         createP(txt);
       })
-      .catch(err => console.error);
+      .catch(error => console.error(error));
   });
 }

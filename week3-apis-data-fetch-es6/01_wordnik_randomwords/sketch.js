@@ -60,5 +60,5 @@ function wordnik(where, url) {
       let div = createDiv(data.word);
       div.parent(where);
     })
-    .catch(err => console.error);
+    .catch(error => console.error(error));
 }

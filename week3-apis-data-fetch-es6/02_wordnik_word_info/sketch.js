@@ -32,7 +32,7 @@ function setup() {
     fetch(url)
       .then(response => response.json())
       .then(data => show(data.examples))
-      .catch(err => console.error);
+      .catch(error => console.error(error));
   });
 
   definitionButton.mousePressed(() => {
@@ -40,7 +40,7 @@ function setup() {
     fetch(url)
       .then(response => response.json())
       .then(data => show(data))
-      .catch(err => console.error);
+      .catch(error => console.error(error));
   });
   audioButton.mousePressed(listAudio);
 }
@@ -65,7 +65,7 @@ function listAudio() {
         li.parent(ol);
       }
     })
-    .catch(err => console.error);
+    .catch(error => console.error(error));
 }
 
 

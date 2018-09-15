@@ -51,5 +51,5 @@ function search() {
         par.parent('results');
       }
     })
-    .catch(err => console.error);
+    .catch(error => console.error(error));
 }

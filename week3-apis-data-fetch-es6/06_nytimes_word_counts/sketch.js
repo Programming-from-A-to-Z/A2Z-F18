@@ -93,6 +93,6 @@ function goJSON(url, index) {
           createP('finished querying NY Times.');
         }
       })
-      .catch(err => console.error);
+      .catch(error => console.error(error));
   }
 }
