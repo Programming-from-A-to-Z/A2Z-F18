@@ -3,7 +3,6 @@
 // https://github.com/shiffman/A2Z-F18
 // http://shiffman.net/a2z
 
-
 function setup() {
   noCanvas();
 
@@ -49,8 +48,6 @@ function setup() {
   }
 
 
-
-
   nlp('dinosaur').nouns().toPlural().out('text');
   // 'dinosaurs'
 
@@ -65,6 +62,5 @@ function setup() {
 
   nlp('five hundred and sixty').values().toNumber().out('text')
   // 560
-
 
 }

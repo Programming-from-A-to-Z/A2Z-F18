@@ -25,25 +25,19 @@ This course focuses on programming strategies and techniques behind procedural a
 * [Homework Assignment](https://github.com/shiffman/A2Z-F18/wiki/Week-1-Homework)
 
 ## Week 2 -- Regular Expressions
-* [Notes and Examples](http://shiffman.net/a2z/regex/)
-* Also
+* From Class
   * [Many DOM Elements](https://editor.p5js.org/icm/sketches/SkNT4TUuQ)
   * [Arrow Function code](https://editor.p5js.org/icm/sketches/SkLqM6Uu7)
-  * rita.js -- similar and rhyming, etc.
+  * [RiTa examples](https://github.com/shiffman/A2Z-F18/tree/master/week2-rita)
+* ES6
+  * [Arrow Function video tutorial](https://youtu.be/mrYMzpbFz18)
+  * [Promises videos](https://www.youtube.com/playlist?list=PLRqwX-V7Uu6bKLPQvPRNNE65kBL62mVfx)
 * Regular Expressions
-  * meta-characters
-    * position
-    * single character
-    * quantifiers
-    * character classes
-    * alternation
-    * capturing groups and back reference
-  * Regex in atom editor
-  * Regex in JS:
-      * Regex: `test()`, `exec()`
-      * String: `match()`
-  * Splitting with regex: `split()`
-  * Replace with regex: `replace()`
+  * [Notes and Examples](http://shiffman.net/a2z/regex/)
+  * JavaScript Regex reference: [`test()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/test), [`exec()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp/exec)
+  * String: [`match()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/match)
+  * Splitting with regex: [`split()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/split)
+  * Replace with regex: [`replace()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/replace)
   * [randexp.js](http://fent.github.io/randexp.js/)
 * [Homework Assignment](https://github.com/shiffman/A2Z-F18/wiki/Week-2-Homework)
 
@@ -59,6 +53,9 @@ This course focuses on programming strategies and techniques behind procedural a
   * [nytimes api](https://developer.nytimes.com/)
   * [wikipedia api](https://en.wikipedia.org/w/api.php)
 * Working with google sheets: [tabletop.js](https://github.com/jsoma/tabletop)
+* Acrostic with Wordnik
+  * [Coding Challenge Video](https://youtu.be/jwoK5WKVXGw)
+  * [Acrostic Code](https://github.com/CodingTrain/website/tree/master/CodingChallenges/CC_073_Acrostic)
 * [Homework Assignment](https://github.com/shiffman/A2Z-F18/wiki/Week-3-Homework)
 
 ## Week 4 -- Bots! Bots! Bots!
