@@ -50,10 +50,7 @@ function searchIt() {
 
   let term = input.value();
   // Loop through every year
-
-
   let promises = [];
-
 
   for (let i = 0; i < total; i++) {
     let year = start + i;
@@ -87,13 +84,13 @@ function searchIt() {
   }
 
   let allDone = Promise.all(promises);
-  
+
   allDone.then(() => {
-    console.log('All finished');
-  })
-  .catch(() => {
-    console.log('error!')
-  });
+      console.log('All finished');
+    })
+    .catch(() => {
+      console.log('error!')
+    });
 }
 
 function delay(wait) {
