@@ -13,15 +13,12 @@ This course focuses on programming strategies and techniques behind procedural a
 ## Week 1 - Intro
 * [Notes and Examples](http://shiffman.net/a2z/intro/)
 * [Glitch Example](https://glitch.com/edit/#!/a2z-diastic)  
-* Git, GitHub, GitHub pages
+* [WorkFlow videos](https://www.youtube.com/playlist?list=PLRqwX-V7Uu6Zu_uqEA6NqhLzKLACwU74X): Editor, Shell, Node, Git
+* [GitHub pages tutorial](https://youtu.be/8HPYsDTk17A): (Note you no longer have to call the branch `gh-pages`).
 * DOM manipulation in p5.js
 * Strings in JS
 * Text input (from user, from file)
 * Client-side vs. Server-side programming
-* Workflow videos:
-    * [p5.js Workflow with Atom, p5 manager, and http-server](https://youtu.be/HZ4D3wDRaec)
-    * [Sublime Text and Python Server](https://www.youtube.com/watch?v=UCHzlUiDD10)
-    * [Atom and Node Server](https://www.youtube.com/watch?v=d3OcFexe9Ik)
 * [Homework Assignment](https://github.com/shiffman/A2Z-F18/wiki/Week-1-Homework)
 
 ## Week 2 -- Regular Expressions
