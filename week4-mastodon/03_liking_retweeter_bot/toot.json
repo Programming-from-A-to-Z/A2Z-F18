@@ -1,0 +1,58 @@
+{
+  "event": "update",
+  "data": {
+    "id": "100781327482155852",
+    "created_at": "2018-09-24T14:56:53.000Z",
+    "in_reply_to_id": null,
+    "in_reply_to_account_id": null,
+    "sensitive": false,
+    "spoiler_text": "",
+    "visibility": "public",
+    "language": "en",
+    "uri": "https://bofa.lol/users/selfagency/statuses/100781327231676680",
+    "content": "<p>apple is producing its own original tv series and they're more conservative than disney <a href=\"https://arstechnica.com/?p=1381471\" rel=\"nofollow noopener\" target=\"_blank\"><span class=\"invisible\">https://</span><span class=\"\">arstechnica.com/?p=1381471</span><span class=\"invisible\"></span></a></p>",
+    "url": "https://bofa.lol/@selfagency/100781327231676680",
+    "replies_count": 0,
+    "reblogs_count": 0,
+    "favourites_count": 0,
+    "reblog": null,
+    "application": null,
+    "account": {
+      "id": "459127",
+      "username": "selfagency",
+      "acct": "selfagency@bofa.lol",
+      "display_name": "jack dorse ebooks",
+      "locked": false,
+      "bot": false,
+      "created_at": "2018-08-17T17:10:17.265Z",
+      "note": "<p>ombudsman of toots</p>",
+      "url": "https://bofa.lol/@selfagency",
+      "avatar": "https://files.mastodon.social/accounts/avatars/000/459/127/original/d4a5c683945dc33b.png",
+      "avatar_static": "https://files.mastodon.social/accounts/avatars/000/459/127/original/d4a5c683945dc33b.png",
+      "header": "https://files.mastodon.social/accounts/headers/000/459/127/original/ed829d1949faa5f7.jpeg",
+      "header_static": "https://files.mastodon.social/accounts/headers/000/459/127/original/ed829d1949faa5f7.jpeg",
+      "followers_count": 1857,
+      "following_count": 1109,
+      "statuses_count": 5765,
+      "emojis": [],
+      "fields": [
+        {
+          "name": "founder",
+          "value": "bofa.lol"
+        },
+        {
+          "name": "discord",
+          "value": "selfagency#7745"
+        },
+        {
+          "name": "bitbucket",
+          "value": "<a href=\"https://bitbucket.com/selfagencyllc/\" rel=\"nofollow noopener\" target=\"_blank\"><span class=\"invisible\">https://</span><span class=\"\">bitbucket.com/selfagencyllc/</span><span class=\"invisible\"></span></a>"
+        }
+      ]
+    },
+    "media_attachments": [],
+    "mentions": [],
+    "tags": [],
+    "emojis": []
+  }
+}
