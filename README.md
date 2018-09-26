@@ -63,6 +63,7 @@ This course focuses on programming strategies and techniques behind procedural a
    * [Notes on deploy to heroku](http://shiffman.net/a2z/bot-heroku/)
    * [Notes on deploy to amazon ec2](http://shiffman.net/a2z/bot-ec2/)
 * Mastodon Bots
+   * [What is Mastodon? video](https://youtu.be/IPSbNdBmWKE)
    * Sign up for [botsin.space](https://botsin.space/about)!
    * [botsin.space Code of Conduct](https://botsin.space/about/more)
    * [botsin.space Terms](https://botsin.space/terms)
