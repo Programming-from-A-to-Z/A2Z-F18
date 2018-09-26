@@ -20,10 +20,11 @@ var M = new Mastodon(config);
 // Streaming API: https://github.com/tootsuite/documentation/blob/master/Using-the-API/Streaming-API.md
 const stream = M.stream('streaming/user')
 
+
 stream.on('message', msg => {
 
   // For debugging
-  // fs.writeFileSync(`data.json`, JSON.stringify(event, null, 2));
+  // fs.writeFileSync(`data${new Date().getTime()}.json`, JSON.stringify(msg, null, 2));
 
   // Only interacting with messages that specifically mention me!
   if (msg.event === 'notification' && msg.data.type === 'mention') {
