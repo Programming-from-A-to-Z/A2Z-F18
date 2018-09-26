@@ -7,5 +7,6 @@
 module.exports = {
   client_id: '',
   client_secret: '',
-  access_token: ''
+  access_token: '',
+  api_url: 'https://botsin.space/api/v1/' // optional, defaults to https://mastodon.social/api/v1
 }
