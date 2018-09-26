@@ -59,9 +59,13 @@ This course focuses on programming strategies and techniques behind procedural a
 * [ChatBot Slides](https://docs.google.com/presentation/d/1NCeg8WJnH2RFU-VTMpYCffPGHkFRDAoED4LwK6affvI/edit?usp=sharing)
 * [TwitterBot Slides](https://docs.google.com/presentation/d/1rL95AggCb0EG6sBhZ47OWWgI_t7Hllqbyt4AnD2c3-4/edit?usp=sharing)
 * [Notes on Node](http://shiffman.net/a2z/server-node/)
-* [Notes on Twitter Bots](http://shiffman.net/a2z/twitter-bots/)
+* ~~[Notes on Twitter Bots](http://shiffman.net/a2z/twitter-bots/)~~
    * [Notes on deploy to heroku](http://shiffman.net/a2z/bot-heroku/)
    * [Notes on deploy to amazon ec2](http://shiffman.net/a2z/bot-ec2/)
+* Mastodon Bots
+   * Sign up for [botsin.space](https://botsin.space/about)!
+   * [botsin.space Code of Conduct](https://botsin.space/about/more)
+   * [botsin.space Terms](https://botsin.space/terms)
 * ChatBots
    * [RiveScript](https://www.rivescript.com/)
    * [RiveScript video tutorial](https://www.youtube.com/watch?v=wf8w1BJb9Xc)
