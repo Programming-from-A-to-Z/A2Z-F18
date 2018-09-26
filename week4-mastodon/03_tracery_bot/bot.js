@@ -3,7 +3,7 @@
 // http://shiffman.net/a2z
 // https://github.com/shiffman/A2Z-F18
 
-// Using the Mastodon node package
+// Using a Mastodon node package
 // https://github.com/vanita5/mastodon-api
 
 var Mastodon = require('mastodon-api');
@@ -49,20 +49,16 @@ setInterval(tooter, 60 * 5 * 1000);
 // Here is the bot!
 function tooter() {
 
-  // This is a random number bot
-  var toot = generate();
+  const toot = {
+    status: generate()
+  }
 
   // Post that tweet!
-  M.post('statuses', {
-    status: toot
-  }, tooted);
-
-  // Callback for when the tweet is sent
-  function tooted(err, data) {
+  M.post('statuses', toot, (err, data) => {
     if (err) {
       console.log(err);
     } else {
-      console.log('Success: ' + data.content);
+      console.log(data.content);
     }
-  };
+  });
 }

@@ -9,7 +9,7 @@
 var Mastodon = require('mastodon-api');
 
 // Authorization for the bot
-// https://mastodon.social/oauth/authorized_applications
+// https://botsin.space/oauth/authorized_applications
 var config = require('./config.js');
 
 // Making a Twit object for connection to the API
@@ -25,19 +25,17 @@ setInterval(tooter, 60 * 5 * 1000);
 function tooter() {
 
   // This is a random number bot
-  var toot = 'Here\'s a random number between 0 and 100: ' + Math.floor(Math.random() * 100);
+  const toot = {
+    status: 'Here\'s a random number between 0 and 100: ' + Math.floor(Math.random() * 100)
+  }
 
   // Post that tweet!
-  M.post('statuses', {
-    status: toot
-  }, tooted);
-
-  // Callback for when the tweet is sent
-  function tooted(err, data) {
+  M.post('statuses', toot, (err, data) => {
     if (err) {
       console.log(err);
     } else {
       console.log(data.content);
     }
-  };
+  });
+
 }

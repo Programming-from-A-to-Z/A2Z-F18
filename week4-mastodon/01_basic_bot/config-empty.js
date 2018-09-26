@@ -5,8 +5,7 @@
 // var config = require('./config.js');
 
 module.exports = {
-  consumer_key:         '', 
-  consumer_secret:      '',
-  access_token:         '',
-  access_token_secret:  ''
+  client_id: '',
+  client_secret: '',
+  access_token: ''
 }
