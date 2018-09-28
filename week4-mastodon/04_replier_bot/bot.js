@@ -24,7 +24,7 @@ const stream = M.stream('streaming/user')
 stream.on('message', msg => {
 
   // For debugging
-  fs.writeFileSync(`data${new Date().getTime()}.json`, JSON.stringify(msg, null, 2));
+  // fs.writeFileSync(`data${new Date().getTime()}.json`, JSON.stringify(msg, null, 2));
 
   // Only interacting with notifications
   if (msg.event === 'notification') {
