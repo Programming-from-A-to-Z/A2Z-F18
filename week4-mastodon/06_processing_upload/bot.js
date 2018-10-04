@@ -24,49 +24,48 @@ const M = new Mastodon(config);
 // See: https://github.com/processing/processing/wiki/Command-Line
 const cmd = 'processing-java --sketch=`pwd`/randomwalk/ --run';
 
-toot()
-  .then(reponse => console.log('success'))
-  .catch(error => console.log(error));
+console.log('The bot is starting');
 
-async function toot() {
-  const results = await exec(cmd);
-  console.log(results.stdout);
-  console.error(results.stderr);
-  const params = {
-    file: fs.createReadStream('randomwalk/output.png'),
-    description: 'an image of a random walk'
-  }
-  const response1 = await M.post('media', params);
-  console.log('image uploaded');
-  const id = response1.data.id;
-  const toot = {
-    status: 'random walk',
-    media_ids: [id]
-  };
-  const response2 = await M.post('statuses', toot);
-  return response2;
+// Start once
+tooter();
+
+// Once every N milliseconds
+setInterval(tooter, 60 * 5 * 1000);
+
+function tooter() {
+  toot().
+  then(response => {
+    console.log(`Success: ${response.id} ${response.timestamp}`);
+  }).
+  catch(error => console.log(error));
 }
 
 
+async function toot() {
+  // Step 1: Run Processing
+  const response1 = await exec(cmd);
+  console.log(response1.stdout);
 
-// exec(cmd)
-//   .then((stdout, stderr) => {
-//     const params = {
-//       file: fs.createReadStream('randomwalk/output.png'),
-//       description: 'an image of a random walk'
-//     }
-//     return M.post('media', params);
-//   })
-//   .then(response => {
-//     console.log('image uploaded');
-//     const id = response.data.id;
-//     const toot = {
-//       status: 'random walk',
-//       media_ids: [id]
-//     };
-//     return M.post('statuses', toot)
-//   })
-//   .then(response => {
-//     console.log('Success:' + response.data.content);
-//   })
-//   .catch(error => console.error(error));
+  // Step 2: Post media
+  const stream = fs.createReadStream('randomwalk/output.png');
+  const media = {
+    file: stream,
+    description: 'An image of a random walk.'
+  };
+  const response2 = await M.post('media', media);
+
+  // Step 3: Post status
+  const toot = {
+    status: 'I walked randomly',
+    media_ids: [response2.data.id]
+  }
+  const response3 = await M.post('statuses', toot);
+
+  // Report that I am done
+  console.log("Success!");
+  console.log(`id: ${response3.data.id} at ${response3.data.created_at}`);
+  return {
+    id: response2.data.id,
+    timestamp: response3.data.created_at
+  };
+}
