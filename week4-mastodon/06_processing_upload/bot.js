@@ -8,7 +8,8 @@
 
 const Mastodon = require('mastodon-api');
 const fs = require('fs');
-const exec = require('child_process').exec;
+const util = require('util');
+const exec = util.promisify(require('child_process').exec);
 
 
 // Authorization for the bot
@@ -21,28 +22,51 @@ const M = new Mastodon(config);
 // Here is the command to run the Processing sketch
 // You need to have Processing command line installed
 // See: https://github.com/processing/processing/wiki/Command-Line
-var cmd = 'processing-java --sketch=`pwd`/randomwalk/ --run';
-exec(cmd, processing);
+const cmd = 'processing-java --sketch=`pwd`/randomwalk/ --run';
 
-// Callback for command line process
-function processing(error, stdout, stderr) {
+toot()
+  .then(reponse => console.log('success'))
+  .catch(error => console.log(error));
+
+async function toot() {
+  const results = await exec(cmd);
+  console.log(results.stdout);
+  console.error(results.stderr);
   const params = {
     file: fs.createReadStream('randomwalk/output.png'),
     description: 'an image of a random walk'
   }
-
-  M.post('media', params)
-    .then(response => {
-      console.log('image uploaded');
-      const id = response.data.id;
-      const toot = {
-        status: 'random walk',
-        media_ids: [id]
-      };
-      return M.post('statuses', toot)
-    })
-    .then(response => {
-      console.log('Success:' + response.data.content);
-    })
-    .catch(error => console.error(error));
+  const response1 = await M.post('media', params);
+  console.log('image uploaded');
+  const id = response1.data.id;
+  const toot = {
+    status: 'random walk',
+    media_ids: [id]
+  };
+  const response2 = await M.post('statuses', toot);
+  return response2;
 }
+
+
+
+// exec(cmd)
+//   .then((stdout, stderr) => {
+//     const params = {
+//       file: fs.createReadStream('randomwalk/output.png'),
+//       description: 'an image of a random walk'
+//     }
+//     return M.post('media', params);
+//   })
+//   .then(response => {
+//     console.log('image uploaded');
+//     const id = response.data.id;
+//     const toot = {
+//       status: 'random walk',
+//       media_ids: [id]
+//     };
+//     return M.post('statuses', toot)
+//   })
+//   .then(response => {
+//     console.log('Success:' + response.data.content);
+//   })
+//   .catch(error => console.error(error));
