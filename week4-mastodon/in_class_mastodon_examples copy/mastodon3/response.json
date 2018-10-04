@@ -1,0 +1,73 @@
+{
+  "data": {
+    "id": "1069996",
+    "type": "image",
+    "url": "https://files.botsin.space/media_attachments/files/001/069/996/original/cf90934ee385d3c7.jpg",
+    "preview_url": "https://files.botsin.space/media_attachments/files/001/069/996/small/cf90934ee385d3c7.jpg",
+    "remote_url": null,
+    "text_url": "https://botsin.space/media/ahvkr8CtHmnFHcpLwO8",
+    "meta": {
+      "original": {
+        "width": 1570,
+        "height": 1044,
+        "size": "1570x1044",
+        "aspect": 1.503831417624521
+      },
+      "small": {
+        "width": 490,
+        "height": 326,
+        "size": "490x326",
+        "aspect": 1.5030674846625767
+      }
+    },
+    "description": "A cute grey kitten holding a blanket found on google image search"
+  },
+  "resp": {
+    "statusCode": 200,
+    "headers": {
+      "date": "Wed, 03 Oct 2018 16:56:07 GMT",
+      "content-type": "application/json; charset=utf-8",
+      "transfer-encoding": "chunked",
+      "connection": "close",
+      "server": "Mastodon",
+      "x-frame-options": "DENY",
+      "x-content-type-options": "nosniff, nosniff",
+      "x-xss-protection": "1; mode=block",
+      "x-ratelimit-limit": "30",
+      "x-ratelimit-remaining": "25",
+      "x-ratelimit-reset": "2018-10-03T17:00:00.764560Z",
+      "vary": "Accept-Encoding, Origin",
+      "content-encoding": "gzip",
+      "etag": "W/\"ccbb042f6ec079d021587daa497a373a\"",
+      "cache-control": "max-age=0, private, must-revalidate",
+      "x-request-id": "9f2ede62-2abe-459a-abf7-a149c3a0376f",
+      "x-runtime": "1.389217",
+      "strict-transport-security": "max-age=31536000; includeSubDomains"
+    },
+    "request": {
+      "uri": {
+        "protocol": "https:",
+        "slashes": true,
+        "auth": null,
+        "host": "botsin.space",
+        "port": 443,
+        "hostname": "botsin.space",
+        "hash": null,
+        "search": null,
+        "query": null,
+        "pathname": "/api/v1/media",
+        "path": "/api/v1/media",
+        "href": "https://botsin.space/api/v1/media"
+      },
+      "method": "POST",
+      "headers": {
+        "Accept": "*/*",
+        "User-Agent": "node-mastodon-client",
+        "Authorization": "Bearer b0897288b6a86a8e647609434c2e2e477f82b32a3638466b4e4d3aa2374e6bcf",
+        "Content-type": "multipart/form-data; boundary=--------------------------641822060570216708577121",
+        "accept-encoding": "gzip, deflate",
+        "content-length": 3001281
+      }
+    }
+  }
+}
