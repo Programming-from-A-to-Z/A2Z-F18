@@ -67,6 +67,7 @@ This course focuses on programming strategies and techniques behind procedural a
    * Sign up for [botsin.space](https://botsin.space/about)!
    * [botsin.space Code of Conduct](https://botsin.space/about/more)
    * [botsin.space Terms](https://botsin.space/terms)
+   * [Mastodon Bot Video Tutorials](https://www.youtube.com/playlist?list=PLRqwX-V7Uu6ZZEnMsZwvBqufFtO60vxie)
 * ChatBots
    * [RiveScript](https://www.rivescript.com/)
    * [RiveScript video tutorial](https://www.youtube.com/watch?v=wf8w1BJb9Xc)
