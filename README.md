@@ -106,7 +106,7 @@ This course focuses on programming strategies and techniques behind procedural a
   * [Tracery by Kate Compton](http://tracery.io/)
 * [Homework Assignment](https://github.com/shiffman/A2Z-F18/wiki/Week-7-Homework)
 
-## Week 8 - Maching Learning: word2vec, LSTMs 
+## Week 8 - Machine Learning: word2vec, LSTMs 
 * Word2Vec
     * [Allison Parrish Word2Vec Tutorial](https://gist.github.com/aparrish/2f562e3737544cf29aaf1af30362f469)
 * [Homework Assignment](https://github.com/shiffman/A2Z-F18/wiki/Week-8-Homework)
