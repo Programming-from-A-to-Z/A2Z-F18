@@ -45,10 +45,12 @@ function setup() {
     requests.push(loadThesis(url));
   }
 
+
   Promise.all(requests)
     .then(response => {
       console.log('data loaded');
       for (let i = 0; i < response.length; i++) {
+
         process(response[i]);
       }
       button.show();
@@ -60,7 +62,9 @@ function process(data) {
   //console.log(data);
   for (let i = 0; i < data.length; i++) {
     // Feed in project names
-    titleMarkov.feed(data[i].project_name);
+    if (data[i].project_name) {
+      titleMarkov.feed(data[i].project_name);
+    }
 
     let elevator = data[i].elevator_pitch;
     // Not all the data has elevator pitches
