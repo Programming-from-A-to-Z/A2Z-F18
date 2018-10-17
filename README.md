@@ -95,15 +95,9 @@ This course focuses on programming strategies and techniques behind procedural a
 
 ## Week 7 - Text Generation: Markov Chains and Grammars
 * [Notes on N-Grams and Markov Chains](http://shiffman.net/a2z/markov)
-* What is an N-Gram?
-* What is Markov Chain?
-  * order
-  * source text and output design
-  * char vs. word n-grams
-  * client-side vs. server-side generation
-* Grammars
-  * [Notes on Context-Free Grammar](http://shiffman.net/a2z/cfg)
-  * [Tracery by Kate Compton](http://tracery.io/)
+* [Notes on Context-Free Grammar](http://shiffman.net/a2z/cfg)
+* [Tracery by Kate Compton](http://tracery.io/)
+* [Seaduck by Allison Parrish](https://github.com/aparrish/seaduck)
 * [Homework Assignment](https://github.com/shiffman/A2Z-F18/wiki/Week-7-Homework)
 
 ## Week 8 - Machine Learning: word2vec, LSTMs 
