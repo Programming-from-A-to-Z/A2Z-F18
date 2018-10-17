@@ -67,7 +67,7 @@ This course focuses on programming strategies and techniques behind procedural a
    * Sign up for [botsin.space](https://botsin.space/about)!
    * [botsin.space Code of Conduct](https://botsin.space/about/more)
    * [botsin.space Terms](https://botsin.space/terms)
-   * [Mastodon Bot Video Tutorials](https://www.youtube.com/playlist?list=PLRqwX-V7Uu6ZZEnMsZwvBqufFtO60vxie)
+   * [Mastodon Bot Video Tutorials](https://www.youtube.com/playlist?list=PLRqwX-V7Uu6byiVX7_Z1rclitVhMBmNFQ)
 * ChatBots
    * [RiveScript](https://www.rivescript.com/)
    * [RiveScript video tutorial](https://www.youtube.com/watch?v=wf8w1BJb9Xc)
@@ -106,7 +106,7 @@ This course focuses on programming strategies and techniques behind procedural a
   * [Tracery by Kate Compton](http://tracery.io/)
 * [Homework Assignment](https://github.com/shiffman/A2Z-F18/wiki/Week-7-Homework)
 
-## Week 8 - Maching Learning: word2vec, LSTMs 
+## Week 8 - Machine Learning: word2vec, LSTMs 
 * Word2Vec
     * [Allison Parrish Word2Vec Tutorial](https://gist.github.com/aparrish/2f562e3737544cf29aaf1af30362f469)
 * [Homework Assignment](https://github.com/shiffman/A2Z-F18/wiki/Week-8-Homework)
