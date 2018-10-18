@@ -1,11 +1,15 @@
 {
   "S":"NP VP",
   "S":"Interj NP VP",
-  "NP":"Det N",
-  "NP":"Det N that VP",
-  "NP":"Det Adj N",
-  "VP":"Vtrans NP",
-  "VP":"Vintr",
+  "NP":[
+    "Det N", 
+    "Det N that VP", 
+    "Det Adj N"
+  ],
+  "VP":[
+    "Vtrans NP", 
+    "Vintr"
+  ],
   "Interj":[
     "oh,",
     "my,",
