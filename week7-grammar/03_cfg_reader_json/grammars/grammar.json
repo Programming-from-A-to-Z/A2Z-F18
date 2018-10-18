@@ -1,6 +1,8 @@
 {
-  "S":"NP VP",
-  "S":"Interj NP VP",
+  "S":[
+    "NP VP", 
+    "Interj NP VP"
+  ],
   "NP":[
     "Det N", 
     "Det N that VP", 
