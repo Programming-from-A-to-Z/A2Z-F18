@@ -9,7 +9,8 @@
 * [Recurrent Neural Networks Tutorial, Part 1](http://www.wildml.com/2015/09/recurrent-neural-networks-tutorial-part-1-introduction-to-rnns/) by Denny Britz.
 * [Rohan & Lenny #3: Recurrent Neural Networks & LSTMs](https://ayearofai.com/rohan-lenny-3-recurrent-neural-networks-10300100899b)
 
-### Other projects and resources
+## Related Projects
+* [SketchRNN](https://magenta.tensorflow.org/assets/sketch_rnn_demo/index.html)
 * [Writing with the Machine](https://www.robinsloan.com/notes/writing-with-the-machine/)
 * [Magenta: Make Music and Art Using Machine Learning](https://magenta.tensorflow.org/)
 * [Handwriting Generation with RNN and p5.js](http://blog.otoro.net/2017/01/01/recurrent-neural-network-artist/)
