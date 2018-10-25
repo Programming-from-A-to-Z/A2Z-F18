@@ -10,17 +10,15 @@ This uses a pre-trained model on a corpus of Virginia Woolf
 For more models see: https://github.com/ml5js/ml5-data-and-training/tree/master/models/lstm
 === */
 
-let lstm;
+let charRNN;
 let textInput;
 let tempSlider;
 let button;
 
 function setup() {
   noCanvas();
-
   // Create the LSTM Generator passing it the model directory
-  lstm = ml5.charRNN('./models/woolf/', modelReady);
-
+  charRNN = ml5.charRNN('./models/woolf/', modelReady);
   // Grab the DOM elements
   textInput = select('#textInput');
   tempSlider = select('#tempSlider');
@@ -33,7 +31,6 @@ function setup() {
 
 // Update the slider values
 function updateSliders() {
-  select('#length').html(lengthSlider.value());
   select('#temperature').html(tempSlider.value());
 }
 
@@ -41,27 +38,16 @@ function modelReady() {
   select('#status').html('Model Loaded');
 }
 
-async function generate() {}
-
-// Generate new text
-function generate() {
-  // Grab the original text
-  let original = textInput.value();
-  // Make it to lower case
-  let txt = original.toLowerCase();
-  let temperature = tempSlider.value();
-
-  // Check if there's something to send
-  if (txt.length > 0) {
-    // Generate text with the lstm
-    lstm
-      .feed(txt)
-      .then(result => {
-        return lstm.predict(temperature);
-      })
-      .then(result => {
-        return lstm.feed(result);
-      })
-      .catch(error => console.error(error));
+async function generate() {
+  charRNN.reset();
+  // Grab the original text s
+  let next = 'the meaning of life ';
+  let par = createP(next);
+  // Generate text with the lstm
+  for (let i = 0; i < 100; i++) {
+    let temperature = tempSlider.value();
+    await charRNN.feed(next);
+    next = await charRNN.predict(temperature);
+    par.html(par.html() + next);
   }
 }
