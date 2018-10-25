@@ -41,6 +41,8 @@ function modelReady() {
   select('#status').html('Model Loaded');
 }
 
+async function generate() {}
+
 // Generate new text
 function generate() {
   // Grab the original text
@@ -52,14 +54,14 @@ function generate() {
   // Check if there's something to send
   if (txt.length > 0) {
     // Generate text with the lstm
-    lstm.feed(txt);
-    lstm.predict(temperature, gotData);
-
-    // When it's done
-    function gotData(err, result) {
-      console.log(result);
-      // Update the status log
-      // select('#result').html(txt + result.sample);
-    }
+    lstm
+      .feed(txt)
+      .then(result => {
+        return lstm.predict(temperature);
+      })
+      .then(result => {
+        return lstm.feed(result);
+      })
+      .catch(error => console.error(error));
   }
 }
