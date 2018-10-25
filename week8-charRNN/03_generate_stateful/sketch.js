@@ -14,6 +14,7 @@ let charRNN;
 let textInput;
 let tempSlider;
 let button;
+let generating = false;
 
 function setup() {
   noCanvas();
@@ -38,16 +39,23 @@ function modelReady() {
   select('#status').html('Model Loaded');
 }
 
-async function generate() {
-  charRNN.reset();
-  // Grab the original text s
-  let next = 'the meaning of life ';
-  let par = createP(next);
-  // Generate text with the lstm
-  for (let i = 0; i < 100; i++) {
+function generate() {
+  if (generating) {
+    generating = false;
+    button.html('generate');
+  } else {
+    generating = true;
+    button.html('pause');
+    loopRNN();
+  }
+}
+
+async function loopRNN() {
+  let par = select('#result');
+  while (generating) {
     let temperature = tempSlider.value();
+    let next = await charRNN.predict(temperature);
     await charRNN.feed(next);
-    next = await charRNN.predict(temperature);
     par.html(par.html() + next);
   }
 }
