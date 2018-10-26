@@ -10,7 +10,7 @@ This uses a pre-trained model on a corpus of Virginia Woolf
 For more models see: https://github.com/ml5js/ml5-data-and-training/tree/master/models/lstm
 === */
 
-let lstm;
+let rnn;
 let textInput;
 let tempSlider;
 let lengthSlider;
@@ -19,7 +19,7 @@ function setup() {
   noCanvas();
 
   // Create the LSTM Generator passing it the model directory
-  lstm = ml5.charRNN('models/woolf/', modelReady);
+  rnn = ml5.charRNN('models/woolf/', modelReady);
 
   // Grab the DOM elements
   textInput = select('#textInput');
@@ -59,7 +59,7 @@ function generate() {
     };
 
     // Generate text with the lstm
-    lstm.generate(data, gotData);
+    rnn.generate(data, gotData);
 
     // Update the DOM elements with typed and generated text
     function gotData(err, result) {
