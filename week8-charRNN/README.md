@@ -10,6 +10,7 @@
 * [Rohan & Lenny #3: Recurrent Neural Networks & LSTMs](https://ayearofai.com/rohan-lenny-3-recurrent-neural-networks-10300100899b)
 
 ## Related Projects
+* [Personalize Privacy Policies](https://ellennickles.github.io/personalized-privacy-policy/) by Ellen Nickles
 * [SketchRNN](https://magenta.tensorflow.org/assets/sketch_rnn_demo/index.html)
 * [Writing with the Machine](https://www.robinsloan.com/notes/writing-with-the-machine/)
 * [Magenta: Make Music and Art Using Machine Learning](https://magenta.tensorflow.org/)
