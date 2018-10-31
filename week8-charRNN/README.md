@@ -26,7 +26,6 @@
 * Text (sequence of characters, words)
 * Music (sequences of notes, rhythm)
 * Drawings (sequences of "vector" paths)
-
 * hidden state: values of hidden vector at a given time
 
 ### RNN Parameters
