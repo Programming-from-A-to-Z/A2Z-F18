@@ -37,3 +37,10 @@
 * one to many (captioning)
 * many to one (sentiment analysis)
 * many to many (text, music generation, language translation)
+
+### Certification error fix
+
+```
+pip install certifi
+/Applications/Python\ 3.6/Install\ Certificates.command
+```
