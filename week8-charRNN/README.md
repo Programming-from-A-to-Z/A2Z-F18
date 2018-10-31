@@ -18,27 +18,27 @@
 * [Experiments in handwriting](http://distill.pub/2016/handwriting/)
 * [RNN for generating Baroque Music](https://www.youtube.com/watch?v=SacogDL_4JU)
 
-### Related open source frameworks:
+## Related open source frameworks:
 * [char-rnn](https://github.com/karpathy/char-rnn)
 * [torch-rnn](https://github.com/jcjohnson/torch-rnn)
 
-### Examples of data that do not fit ANNs/CNNs
+## Examples of data that do not fit ANNs/CNNs
 * Text (sequence of characters, words)
 * Music (sequences of notes, rhythm)
 * Drawings (sequences of "vector" paths)
 * hidden state: values of hidden vector at a given time
 
-### RNN Parameters
+## RNN Parameters
 * `maxlen` - length of a "sentence" for inputting into RNN.
 * temperature (aka "diversity"): A number in the range of 0-1 (cannot be 0). The temperature divides probabilities before sampling the next character. Lower temperature will result in more "expected" outcomes (high probabilities are even higher). A higher temperature increases the "diversity" of outcomes, but may produce less "correct-sounding" results.
 
-### RNN architectures
+## RNN architectures
 * one to one (ANN)
 * one to many (captioning)
 * many to one (sentiment analysis)
 * many to many (text, music generation, language translation)
 
-### Certification error fix
+## Certification error fix
 
 ```
 pip install certifi
