@@ -15,9 +15,9 @@ function setup() {
 function modelLoaded() {
   select('#status').html('Model Loaded');
   calculate();
-  let a = select('#a').input(calculate);
-  let b = select('#b').input(calculate);
-  let c = select('#c').input(calculate);
+  let a = select('#a').changed(calculate);
+  let b = select('#b').changed(calculate);
+  let c = select('#c').changed(calculate);
 }
 
 async function calculate() {
