@@ -32,7 +32,6 @@ function setup() {
 
 function walk() {
   word2vec.nearest(current, 10).then(result => {
-    console.log(result);
     let next = random(result);
     current = next.word;
     select('#walk').html(current);
