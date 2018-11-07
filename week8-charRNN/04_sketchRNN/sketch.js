@@ -4,7 +4,7 @@ let x, y;
 let sketch;
 
 function setup() {
-  createCanvas(400, 300);
+  createCanvas(640, 480);
   model = ml5.SketchRNN('cat', modelReady);
   let button = select('#draw');
   button.mousePressed(startDrawing);
