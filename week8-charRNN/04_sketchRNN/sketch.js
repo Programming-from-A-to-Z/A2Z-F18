@@ -33,7 +33,7 @@ function draw() {
       sketch = null;
       model.generate(gotSketch);
     }
-  } 
+  }
 }
 
 function gotSketch(err, s) {
@@ -44,4 +44,3 @@ function modelReady() {
   console.log('model ready');
   startDrawing();
 }
-
