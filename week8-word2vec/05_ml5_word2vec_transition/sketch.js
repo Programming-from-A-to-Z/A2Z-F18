@@ -25,10 +25,8 @@ function go() {
   let a = select('#start').value();
   let b = select('#end').value();
   path = [];
-  path.push(a);
   average(a, b, path, 0).then(result => {
-    path.push(b);
-    console.log(path);
+    select('#between').html(join(path, '<br>'));
   });
 }
 
