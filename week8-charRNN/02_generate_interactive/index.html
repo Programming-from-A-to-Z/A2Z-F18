@@ -13,11 +13,10 @@
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.1/p5.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.1/addons/p5.dom.min.js"></script>
-  <!-- <script src="https://unpkg.com/ml5@0.1.1/dist/ml5.min.js" type="text/javascript"></script> -->
-  <script src="ml5.min.js" type="text/javascript"></script>
+  <script src="https://unpkg.com/ml5@0.1.2/dist/ml5.min.js" type="text/javascript"></script>
 
   <style>
-  #original {
+    #original {
     background-color: #EEE;
     padding: 4px 0px 4px 4px
   }
@@ -33,12 +32,13 @@
 <script src="sketch.js"></script>
 
 <body>
-    <h1>Interactive charRNN Text Generation</h1>
-    <h2>This example uses a pre-trained model on a corpus of <a href="https://en.wikipedia.org/wiki/Virginia_Woolf">Virginia Woolf</a></h2>
+  <h1>Interactive charRNN Text Generation</h1>
+  <h2>This example uses a pre-trained model on a corpus of <a href="https://en.wikipedia.org/wiki/Virginia_Woolf">Virginia
+      Woolf</a></h2>
   <textarea id="textInput" style="width: 300px; height: 50px;" placeholder="type here"></textarea>
-  <br/> length:
+  <br /> length:
   <input id="lenSlider" type="range" min="1" max="100" value="20"> <span id="length">20</span>
-  <br/> temperature:
+  <br /> temperature:
   <input id="tempSlider" type="range" min="0" max="1" step="0.01"><span id="temperature">0.5</span>
   <p id="status">Loading Model</p>
   <p id="result">

@@ -55,7 +55,7 @@ async function loopRNN() {
   while (generating) {
     let temperature = tempSlider.value();
     let next = await charRNN.predict(temperature);
-    await charRNN.feed(next);
-    par.html(par.html() + next);
+    await charRNN.feed(next.sample);
+    par.html(par.html() + next.sample);
   }
 }
