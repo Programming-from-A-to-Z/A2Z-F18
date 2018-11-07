@@ -21,7 +21,7 @@ function listen() {
 
 // Here's how we can write code to handle a specific 'route'
 // http://myserver.com/thing
-app.get('/thing', doThing);
+app.get('/thing').then(test => console.log(test));
 
 // This is the call back for what to do
 // We can get stuff from the query String!

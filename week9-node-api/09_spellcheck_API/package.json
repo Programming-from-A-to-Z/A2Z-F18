@@ -10,8 +10,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "cors": "^2.7.1",
-    "express": "^4.13.3",
-    "natural": "^0.4.0"
+    "cors": "^2.8.5",
+    "express": "^4.16.4",
+    "natural": "^0.6.2"
   }
 }
