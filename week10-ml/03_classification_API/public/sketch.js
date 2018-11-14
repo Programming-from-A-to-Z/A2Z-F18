@@ -2,7 +2,6 @@
 // Daniel Shiffman
 // https://github.com/shiffman/A2Z-F15
 
-
 function setup() {
   noCanvas();
 
@@ -20,7 +19,7 @@ function setup() {
     var data = {
       text: txt,
       category: cat
-    }
+    };
     // Post the text and category to the API
     httpPost('/train', data, success, error);
   }
@@ -36,8 +35,8 @@ function setup() {
   function classify() {
     var txt = classifyText.value();
     var data = {
-      text: txt,
-    }
+      text: txt
+    };
     // Send the text to the API
     httpPost('/classify', data, classified, error);
   }
@@ -46,6 +45,7 @@ function setup() {
   function classified(result) {
     // With a POST have to turn it back into valid JSON
     result = JSON.parse(result);
+    console.log(result);
 
     // This could be vastly improved but throwing together some
     // html to put results on webpage
@@ -58,7 +58,6 @@ function setup() {
     classification.html(info);
   }
 }
-
 
 // Arbitrary success and error callbacks
 function success(result) {
