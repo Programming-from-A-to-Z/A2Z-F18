@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>01_sentiment_tfjs</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/p5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/addons/p5.dom.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@0.13.3/dist/tf.min.js"></script>
+    <script src="sentiment.js"></script>
+    <script src="sketch.js"></script>
+  </head>
+  <body>
+    <h1>TensorFlow.js Sentiment Analysis Demo</h1>
+    <p id="status">loading model...</p>
+    <p><input id="userInput" size="50" value="I love rainbows. Choo choo!" /> <button id="submit">submit</button></p>
+    <p>sentiment score: <span id="score"></span></p>
+  </body>
+</html>
