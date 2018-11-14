@@ -9,7 +9,7 @@ function setup() {
 
   // Word from user
   var wordinput = select('#word');
-  // Score from user 
+  // Score from user
   var scoreinput = select('#score');
   var scoreit = select('#scoreit');
   scoreit.mousePressed(submitscore);
@@ -32,12 +32,11 @@ function setup() {
   var analyzeit = select('#analyze');
   analyzeit.mousePressed(analyze);
 
-
   // Run the analysis
   function analyze() {
     var params = {
       text: txt.value()
-    }
+    };
     // Have to use a POST here!
     httpPost('/analyze', params, success);
   }
@@ -58,5 +57,4 @@ function setup() {
     positive.html('positive words: ' + result.positive.join(', '));
     console.log(result);
   }
-
 }

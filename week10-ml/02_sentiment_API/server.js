@@ -7,23 +7,24 @@
 // https://www.npmjs.com/package/sentiment
 
 // Using express: http://expressjs.com/
-var express = require('express');
+const express = require('express');
 // Create the app
-var app = express();
+const app = express();
 
 // File System for loading the list of words
-var fs = require('fs');
+const fs = require('fs');
 
 // Cors for allowing "cross origin resources"
 // https://developer.mozilla.org/en-US/docs/Web/HTTP/Access_control_CORS
-var cors = require('cors');
+const cors = require('cors');
 app.use(cors());
 
 // A new package for sentiment analysis
-var sentiment = require('sentiment');
+const Sentiment = require('sentiment');
+const sentiment = new Sentiment();
 
 // "body parser" is need to deal with post requests
-var bodyParser = require('body-parser');
+const bodyParser = require('body-parser');
 app.use(bodyParser.json()); // support json encoded bodies
 app.use(bodyParser.urlencoded({ extended: true })); // support encoded bodies
 
@@ -32,12 +33,12 @@ app.use(express.static('public'));
 
 // Our "database" (in addition to what is in the AFINN-111 list)
 // is "additional.json", check first to see if it exists
-var additional;
-var exists = fs.existsSync('additional.json');
+let additional;
+const exists = fs.existsSync('additional.json');
 if (exists) {
   // Read the file
   console.log('loading additional words');
-  var txt = fs.readFileSync('additional.json', 'utf8');
+  const txt = fs.readFileSync('additional.json', 'utf8');
   // Parse it  back to object
   additional = JSON.parse(txt);
 } else {
@@ -48,12 +49,12 @@ if (exists) {
 
 // Set up the server
 // process.env.PORT is related to deploying on heroku
-var server = app.listen(process.env.PORT || 3000, listen);
+const server = app.listen(process.env.PORT || 3000, listen);
 
 // This call back just tells us that the server has started
 function listen() {
-  var host = server.address().address;
-  var port = server.address().port;
+  const host = server.address().address;
+  const port = server.address().port;
   console.log('Example app listening at http://' + host + ':' + port);
 }
 
@@ -63,15 +64,15 @@ app.get('/add/:word/:score', addWord);
 // Handle that route
 function addWord(req, res) {
   // Word and score
-  var word = req.params.word;
+  const word = req.params.word;
   // Make sure it's not a string by accident
-  var score = Number(req.params.score);
+  const score = Number(req.params.score);
 
   // Put it in the object
   additional[word] = score;
 
   // Let the request know it's all set
-  var reply = {
+  const reply = {
     status: 'success',
     word: word,
     score: score
@@ -80,7 +81,7 @@ function addWord(req, res) {
 
   // Write a file each time we get a new word
   // This is kind of silly but it works
-  var json = JSON.stringify(additional, null, 2);
+  const json = JSON.stringify(additional, null, 2);
   fs.writeFile('additional.json', json, 'utf8', finished);
   function finished(err) {
     console.log('Finished writing additional.json');
@@ -95,9 +96,9 @@ app.post('/analyze', analyze);
 
 function analyze(req, res) {
   // The bodyParse package allows us to easily just grab the "text" field
-  var text = req.body.text;
+  const text = req.body.text;
   // Send back the results of the analysis
   // Use the additional words too
-  var reply = sentiment(text, additional);
+  const reply = sentiment.analyze(text, additional);
   res.send(reply);
 }
