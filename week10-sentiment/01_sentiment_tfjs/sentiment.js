@@ -51,10 +51,6 @@ async function loadHostedPretrainedModel(url) {
   try {
     const model = await tf.loadModel(url);
     console.log('Done loading pretrained model.');
-    // We can't load a model twice due to
-    // https://github.com/tensorflow/tfjs/issues/34
-    // Therefore we remove the load buttons to avoid user confusion.
-    // ui.disableLoadModelButtons();
     return model;
   } catch (err) {
     console.error(err);
