@@ -29,7 +29,7 @@ function setup() {
     // What did the user say?
     const txt = input.value();
     // What does the bot say?
-    bot.reply("local-user")
+    bot.reply("local-user",txt)
       .then(reply => output.html(reply))
       .catch(error => console.error(error));
   });
